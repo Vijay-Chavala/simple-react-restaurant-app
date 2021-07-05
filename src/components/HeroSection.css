@@ -1,0 +1,257 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Allerta+Stencil&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@200&display=swap");
+
+.heroBanner {
+  height: 80vh;
+  width: 100%;
+}
+.row {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  padding: 10px;
+  flex-direction: row;
+}
+.nav-center {
+  padding: 10px 0;
+}
+.content-container {
+  width: 70%;
+  margin: 0 auto;
+  margin-top: 150px;
+  font-family: "Dancing Script", cursive;
+  color: #535353;
+}
+
+.content-container .underline {
+  width: 4.5rem;
+  height: 0.1rem;
+  background: orange;
+  margin: 0 auto;
+  margin-top: 5px;
+}
+.content-container .topText {
+  font-size: 1.5rem;
+}
+.content-container .mainText {
+  font-family: "Allerta Stencil", sans-serif;
+  color: #535353;
+  padding: 10px 0;
+  font-size: 2.5rem;
+}
+
+.content-container .subText {
+  font-family: "Roboto", sans-serif;
+  color: rgba(87, 87, 87, 0.8);
+  padding: 10px 0;
+  width: 90%;
+}
+.content-container .btnText {
+  padding: 12px 25px;
+  background-color: orange;
+  border: none;
+  outline: none;
+  color: #ffff;
+  letter-spacing: 2.5px;
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  margin-top: 10px;
+  transition: 0.5s all ease;
+  border-radius: 2px;
+}
+.content-container .btnText:hover {
+  background: #535353;
+}
+.content-text-md {
+  width: 90%;
+  margin: 0 auto;
+}
+.content-text-md .content-container {
+  margin: 30px 0;
+}
+.content-text-md .topText {
+  margin-top: 0px;
+  font-size: 1.5rem;
+}
+.content-text-md .underline {
+  width: 4.5rem;
+  height: 0.1rem;
+  background: orange;
+  margin: 5px 0 0;
+}
+.content-text-md .mainText {
+  font-size: 2.3rem;
+}
+
+.content-text-md .mainText:after {
+  content: "Royal Foods";
+  color: orange;
+}
+.content-text-md .subText {
+  font-size: 1rem;
+}
+.content-text-md .img-container {
+  width: 70%;
+  text-align: right;
+  margin-top: 50px;
+}
+.content-text-md .btnText {
+  padding: 10px 20px;
+}
+
+.content-text-md .img-container img {
+  width: 80%;
+}
+.right .underline {
+  margin: 0 auto;
+  margin-top: 5px;
+}
+
+/* 1024 media queries*/
+@media screen and (max-width: 1024px) {
+  .heroBanner {
+    background-size: cover !important;
+    height: 65vh;
+  }
+  .content-container {
+    width: 60%;
+    margin-top: 70px;
+  }
+
+  .content-container .mainText {
+    font-size: 2.5rem;
+  }
+}
+@media screen and (max-width: 943px) {
+  .heroBanner {
+    background-size: cover !important;
+    height: 50vh;
+  }
+
+  .content-container {
+    margin-top: 50px;
+  }
+  .content-container .mainText {
+    font-size: 2rem;
+  }
+}
+@media screen and (max-width: 860px) {
+  .heroBanner {
+    background-size: cover !important;
+    height: 60vh;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .content-container {
+    margin-top: 50px;
+  }
+  .content-container .topText {
+    font-size: 1rem;
+  }
+  .content-container .mainText {
+    font-size: 1.3rem;
+  }
+  .content-container .subText {
+    font-size: 0.8rem;
+  }
+  .content-container .btnText {
+    padding: 8px 12px;
+    letter-spacing: 1.5px;
+    font-size: 0.8rem;
+  }
+}
+
+@media screen and (max-width: 661px) {
+  .content-container {
+    margin-top: 50px;
+  }
+  .content-container .topText {
+    font-size: 1rem;
+  }
+  .content-container .mainText {
+    font-size: 1.2rem;
+  }
+  .content-container .subText {
+    font-size: 0.7rem;
+  }
+  .content-container .btnText {
+    padding: 8px 12px;
+    letter-spacing: 1.5px;
+    font-size: 0.7rem;
+  }
+}
+
+@media screen and (max-width: 565px) {
+  .heroBanner {
+    height: 40vh;
+  }
+
+  .content-container {
+    margin-top: 40px;
+  }
+  .content-container .topText {
+    font-size: 1rem;
+  }
+  .content-container .mainText {
+    font-size: 1.1rem;
+  }
+  .content-container .subText {
+    font-size: 0.7rem;
+  }
+  .content-container .btnText {
+    padding: 8px 12px;
+    letter-spacing: 1.5px;
+    font-size: 0.6rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .heroBanner {
+    height: 38vh;
+  }
+  .content-container {
+    margin-top: 20px;
+  }
+  .content-container .topText {
+    font-size: 1rem;
+  }
+  .content-container .mainText {
+    font-size: 1.3rem;
+    padding: 0;
+    margin: 3px;
+  }
+  .content-container .subText {
+    font-size: 0.6rem;
+  }
+  .content-container .btnText {
+    padding: 8px 6px;
+    letter-spacing: 1.5px;
+    font-size: 0.5rem;
+    width: 80%;
+    margin: 0;
+  }
+  /* section 2 text content and side image */
+  .content-text-md {
+    display: flex;
+    width: 100%;
+    flex-direction: column-reverse !important;
+  }
+  .content-text-md .content-container {
+    text-align: center !important;
+    width: 90%;
+  }
+  .content-text-md .img-container {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center !important;
+    margin-top: 50px;
+    margin: 0 auto;
+    padding: 0;
+  }
+  .content-text-md .underline {
+    margin: 0 auto;
+    margin-top: 10px;
+  }
+}

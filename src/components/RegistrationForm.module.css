@@ -1,0 +1,129 @@
+.formSec {
+  padding: 20px 0;
+  width: 100%;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  background-position: center !important;
+}
+.topContent {
+  text-align: center;
+  width: 80%;
+  margin: 10px auto;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.4);
+  padding: 20px;
+  border-radius: 10px;
+}
+.topContent h2 {
+  font-family: "Dancing Script", cursive;
+  color: #fff;
+}
+.topContent p {
+  font-family: "Roboto", sans-serif;
+  color: #cecece;
+
+  width: 70%;
+  text-align: center;
+  margin: 0 auto;
+  font-size: 14px;
+}
+.formDiv {
+  background-color: #f8f8f8;
+  padding: 10px 0;
+  border-radius: 10px;
+  width: 80%;
+  margin: 20px auto;
+}
+.formDiv .mainText {
+  text-align: center;
+  font-family: "Dancing Script", cursive;
+  color: #535353;
+  padding: 10px 0 5pxs;
+}
+.underline {
+  width: 4.5rem;
+  height: 0.2rem;
+  background: orange;
+  margin: 05px auto;
+}
+
+.form {
+  display: block;
+  width: 60%;
+  margin: 50px auto 10px;
+}
+.form input,
+.book_btn {
+  display: block;
+  width: 80%;
+  padding: 10px 20px;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  font-family: "Roboto", sans-serif;
+}
+.form input:focus {
+  outline-color: orange;
+}
+.book_btn {
+  width: 80%;
+  margin: 10px auto 50px;
+  padding: 12px 10px;
+  text-align: center;
+  background: orange;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 16px;
+  transition: 0.5s all ease;
+}
+
+.book_btn:hover {
+  background: #535353;
+  font-family: "Roboto", sans-serif;
+}
+@media screen and (max-width: 480px) {
+  .topContent {
+    width: 90%;
+    margin: 10px auto;
+    padding: 15px;
+  }
+  .topContent h2 {
+    font-size: 1.5rem;
+  }
+  .topContent p {
+    width: 100%;
+    font-size: 0.8rem;
+  }
+
+  .formDiv {
+    width: 90%;
+    margin: 20px auto;
+  }
+  .formDiv .mainText {
+    padding: 10px 0 5pxs;
+    font-size: 1.7rem;
+  }
+  .underline {
+    width: 4.5rem;
+    height: 0.2rem;
+    background: orange;
+    margin: 05px auto;
+  }
+
+  .form {
+    width: 100%;
+    margin: 20px auto 10px;
+  }
+  .form input,
+  .book_btn {
+    width: 90%;
+    padding: 8px 15px;
+    margin-bottom: 10px;
+  }
+  .book_btn {
+    width: 90%;
+    margin: 10px auto 15px;
+    padding: 8px 10px;
+    font-size: 16px;
+  }
+}

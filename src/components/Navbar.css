@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css2?family=Allerta+Stencil&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap");
+
+.nav-center {
+  background-color: #fff;
+  position: relative;
+  z-index: 999;
+}
+.nav-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 25px;
+}
+.nav-header .navbar-logo {
+  font-family: "Allerta Stencil", sans-serif;
+  color: #535353;
+  font-size: 22px;
+  font-weight: bolder;
+  transition: 0.4s all ease-in-out;
+}
+.navbar-logo span {
+  color: orange;
+}
+.nav-header .navbar-logo:hover {
+  color: orange;
+}
+.navbar-logo span:hover {
+  color: #535353;
+}
+
+.links-container {
+  height: 0;
+  transition: 0.5s all ease-in-out;
+  margin: 0 auto;
+  width: 90%;
+  box-shadow: 0 2px 5px rgb(0 0 0 / 20%);
+  background: transparent;
+  overflow: hidden;
+  font-family: "Roboto", sans-serif;
+}
+.show-container {
+  height: 10rem;
+}
+.links {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  list-style-type: none;
+}
+.links .url-link {
+  background: #f8f8f8 none repeat scroll 0 0;
+  display: block;
+  color: #666666;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  text-transform: capitalize;
+  margin: 2px 0;
+  text-align: center;
+  transition: all 0.4s ease-in-out;
+  font-weight: 400;
+  font-weight: bolder;
+}
+.links .url-link:hover {
+  color: orange;
+  background: #e6e6e6;
+}
+.nav-header .nav-toggle {
+  font-size: 20px;
+  color: #000;
+  background: transparent;
+  border-color: transparent;
+  cursor: pointer;
+  transition: 0.5s all;
+}
+.nav-toggle:hover {
+  color: rgb(196, 196, 196);
+  transform: rotate(90deg);
+}
+.social-links {
+  display: none;
+}
+
+@media screen and (min-width: 800px) {
+  .nav-center {
+    max-width: 1170px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0;
+  }
+  .nav-header .nav-toggle {
+    display: none;
+  }
+  .links-container {
+    height: auto !important;
+    box-shadow: none;
+    width: 500px;
+  }
+  .links {
+    display: flex;
+  }
+  .links .url-link {
+    background: none;
+    font-weight: bold;
+  }
+  .links .url-link:hover {
+    background: none;
+  }
+
+  .social-links {
+    display: flex;
+    margin-right: 10px;
+  }
+  .social-icons {
+    padding-right: 20px;
+    display: flex;
+    padding: 10px;
+    color: #323947;
+    font-size: 18px;
+    transition: 0.3s all ease-in-out;
+    font-size: 22px;
+  }
+  .social-icons:hover {
+    color: orange;
+  }
+}
+/* laptop media queries */
+@media screen and (max-width: 1024px) {
+  .nav-header .navbar-logo {
+    word-wrap: normal;
+    width: 190px;
+  }
+  .links .url-link {
+    padding: 10px;
+  }
+}
+/* navbar no wrap */
+@media screen and (max-width: 845px) {
+  .links .url-link {
+    padding: 6px;
+  }
+}
