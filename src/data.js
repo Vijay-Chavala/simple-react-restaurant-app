@@ -8,13 +8,13 @@ export const links = [
   },
   {
     id: 2,
-    url: "/about",
-    text: "about",
+    url: "/menu",
+    text: "menu",
   },
   {
     id: 3,
-    url: "/projects",
-    text: "projects",
+    url: "/about",
+    text: "about",
   },
   {
     id: 4,
@@ -23,15 +23,15 @@ export const links = [
   },
   {
     id: 5,
-    url: "/profile",
-    text: "profile",
+    url: "/reservation",
+    text: "reservation",
   },
 ];
 
 export const social = [
   {
     id: 1,
-    url: "https://www.twitter.com",
+    url: "https://www.facebook.com",
     icon: <FaFacebook />,
   },
   {
