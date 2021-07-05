@@ -15,7 +15,7 @@ export const hero2 = {
   reverseComponent: false,
   textAlign: "left",
   topText: "Your happy place",
-  mainText: "For every special occasion, there’s ",
+  mainText: "Enjoy the food with your special one",
   subText: `         Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, scrambled it to make a
      type specimen book.Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.`,
   contentImg: "images/couple-eating.png",
@@ -74,7 +74,7 @@ export const ourFavDishes = {
 export const specialDishes = {
   reverseComponent: true,
   textAlign: "center",
-  topText: "Enjoy the food with your special one",
+  topText: "For every special occasion, there’s ",
   mainText: "",
   subText: `         Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, scrambled it to make a
      type specimen book.Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.`,

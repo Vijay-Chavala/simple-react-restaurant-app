@@ -5,16 +5,22 @@ import { MenuList } from "./pages/Home/Data";
 import styles from "./Categories.module.css";
 
 const allCategories = [
-  "all",
+  "show less",
+  "show all",
   ...new Set(MenuList.map((item) => item.category)),
 ];
+const showLessItems = MenuList.slice(0, 6);
 
 const OurMenu = () => {
-  const [menuItems, setMenuItems] = useState(MenuList);
+  const [menuItems, setMenuItems] = useState(showLessItems);
 
   const filterCategory = (category) => {
-    if (category === "all") {
+    if (category === "show all") {
       setMenuItems(MenuList);
+      return;
+    }
+    if (category === "show less") {
+      setMenuItems(showLessItems);
       return;
     }
     const newList = MenuList.filter((item) => item.category === category);

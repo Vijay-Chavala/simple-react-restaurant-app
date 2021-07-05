@@ -17,6 +17,7 @@ const FavDishes = ({ mainText, subText, itemCards, bgImg }) => {
         >
           <div className={styles.textContent}>
             <h2>{mainText}</h2>
+            <div className={styles.underline}></div>
             <p>{subText}</p>
           </div>
           <div className={styles.row}>

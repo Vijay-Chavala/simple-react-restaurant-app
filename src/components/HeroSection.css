@@ -4,7 +4,6 @@
 
 .heroBanner {
   height: 80vh;
-  width: 100%;
 }
 .row {
   display: flex;
@@ -20,7 +19,7 @@
 .content-container {
   width: 70%;
   margin: 0 auto;
-  margin-top: 150px;
+  margin-top: 10%;
   font-family: "Dancing Script", cursive;
   color: #535353;
 }
@@ -85,10 +84,6 @@
   font-size: 2.3rem;
 }
 
-.content-text-md .mainText:after {
-  content: "Royal Foods";
-  color: orange;
-}
 .content-text-md .subText {
   font-size: 1rem;
 }
@@ -108,12 +103,15 @@
   margin: 0 auto;
   margin-top: 5px;
 }
-
+.section-4 .right .topText:after {
+  content: " Royal Foods";
+  color: orange;
+}
 /* 1024 media queries*/
 @media screen and (max-width: 1024px) {
   .heroBanner {
     background-size: cover !important;
-    height: 65vh;
+    height: 80vh;
   }
   .content-container {
     width: 60%;
@@ -127,108 +125,96 @@
 @media screen and (max-width: 943px) {
   .heroBanner {
     background-size: cover !important;
-    height: 50vh;
+    height: 80vh;
   }
 
   .content-container {
-    margin-top: 50px;
+    margin-top: 60px;
   }
   .content-container .mainText {
     font-size: 2rem;
   }
 }
-@media screen and (max-width: 860px) {
-  .heroBanner {
-    background-size: cover !important;
-    height: 60vh;
-  }
-}
 
 @media screen and (max-width: 800px) {
   .content-container {
-    margin-top: 50px;
+    margin-top: 60px;
   }
   .content-container .topText {
-    font-size: 1rem;
+    font-size: 1.5rem;
   }
   .content-container .mainText {
-    font-size: 1.3rem;
+    font-size: 2rem;
   }
   .content-container .subText {
-    font-size: 0.8rem;
+    font-size: 0.9rem;
   }
   .content-container .btnText {
     padding: 8px 12px;
     letter-spacing: 1.5px;
-    font-size: 0.8rem;
+    font-size: 0.9rem;
   }
-}
-
-@media screen and (max-width: 661px) {
-  .content-container {
-    margin-top: 50px;
+  .content-container .img-container {
+    width: 80%;
   }
-  .content-container .topText {
-    font-size: 1rem;
+  .content-container .img-container img {
+    width: 100%;
   }
-  .content-container .mainText {
-    font-size: 1.2rem;
+  /* }
+  .section-4 .img-container {
+    width: 80%;
   }
-  .content-container .subText {
-    font-size: 0.7rem;
-  }
-  .content-container .btnText {
-    padding: 8px 12px;
-    letter-spacing: 1.5px;
-    font-size: 0.7rem;
-  }
+  .section-4 .img-container img {
+    width: 95%;
+  } */
 }
 
 @media screen and (max-width: 565px) {
   .heroBanner {
-    height: 40vh;
+    height: 65vh;
   }
 
   .content-container {
     margin-top: 40px;
   }
   .content-container .topText {
-    font-size: 1rem;
-  }
-  .content-container .mainText {
     font-size: 1.1rem;
   }
+  .content-container .mainText {
+    font-size: 1.5rem;
+  }
   .content-container .subText {
-    font-size: 0.7rem;
+    font-size: 0.8rem;
   }
   .content-container .btnText {
     padding: 8px 12px;
     letter-spacing: 1.5px;
-    font-size: 0.6rem;
+    font-size: 0.8rem;
   }
 }
 @media screen and (max-width: 480px) {
   .heroBanner {
-    height: 38vh;
+    height: 60vh;
   }
   .content-container {
-    margin-top: 20px;
+    width: 80%;
+    margin-top: 50px;
   }
   .content-container .topText {
-    font-size: 1rem;
+    font-size: 1.5rem;
   }
   .content-container .mainText {
-    font-size: 1.3rem;
+    font-size: 1.7rem;
     padding: 0;
     margin: 3px;
   }
   .content-container .subText {
-    font-size: 0.6rem;
+    font-size: 0.9rem;
   }
   .content-container .btnText {
     padding: 8px 6px;
     letter-spacing: 1.5px;
-    font-size: 0.5rem;
+    font-size: 0.9rem;
     width: 80%;
     margin: 0;
   }
@@ -240,7 +226,7 @@
   }
   .content-text-md .content-container {
     text-align: center !important;
-    width: 90%;
+    width: 95%;
   }
   .content-text-md .img-container {
     width: 80%;
@@ -253,5 +239,69 @@
   .content-text-md .underline {
     margin: 0 auto;
     margin-top: 10px;
+  }
+
+  .content-text-md .subText {
+    text-align: center;
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  .content-text-md .btnText {
+    width: 100%;
+  }
+
+  /* section 4 text content and side image */
+
+  .section-4 .topText:after {
+    content: "Royal Foods";
+    font-size: 1.8rem;
+    color: orange;
+  }
+
+  .section-4 .img-container {
+    width: 100%;
+  }
+  .section-4 .img-container img {
+    width: 95%;
+  }
+
+  @media screen and (max-width: 425px) {
+    .heroBanner {
+      height: 50vh;
+    }
+    .content-container {
+      width: 95%;
+      margin-top: 10px;
+    }
+  }
+
+  @media screen and (max-width: 350px) {
+    .heroBanner {
+      height: 40vh;
+    }
+    .content-container {
+      width: 95%;
+      margin-top: 0px;
+    }
+    .content-container .topText {
+      font-size: 1.2rem;
+    }
+
+    .content-container .mainText {
+      font-size: 1.3rem;
+      padding: 0;
+      margin: 3px;
+    }
+    .content-container .subText {
+      font-size: 0.6rem;
+    }
+    .content-container .btnText {
+      padding: 8px 6px;
+      letter-spacing: 1.5px;
+      font-size: 0.6rem;
+      width: 80%;
+      margin: 0;
+    }
   }
 }

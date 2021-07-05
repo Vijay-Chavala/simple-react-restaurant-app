@@ -24,7 +24,8 @@ const RegistrationForm = ({ subText, mainText, bgImg, btnText }) => {
           <input type="text" placeholder="Enter Name" />
           <input type="email" placeholder="Enter E-Mail" />
           <input type="phone" placeholder="Enter Mobile Number" />
-          <input type="time" placeholder="Enter Mobile Number" />
+          <input type="date" />
+          <input type="time" />
           <button type="button" className={regStyles.book_btn}>
             {btnText}
           </button>

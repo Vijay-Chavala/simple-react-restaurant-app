@@ -21,7 +21,15 @@
   font-family: "Dancing Script", cursive;
   font-size: 2rem;
   color: #fff;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
+}
+.underline {
+  width: 4.5rem;
+  height: 0.1rem;
+  background: orange;
+  margin: 0 auto;
+  margin-top: 5px;
+  margin-bottom: 10px;
 }
 .textContent p {
   font-family: "Roboto", sans-serif;
@@ -33,16 +41,18 @@
   grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
   grid-gap: 5px;
   text-align: center;
+  margin-top: 20px;
+  width: 100%;
 }
 
 .itemCard {
   width: 85%;
   background-color: #eaeaea;
   margin: 10px auto;
-  padding: 10px;
+  padding: 50px;
   border-radius: 5px;
-  border-top-left-radius: 70px;
-  border-bottom-right-radius: 70px;
+  border-top-left-radius: 30px;
+  border-bottom-right-radius: 30px;
   box-shadow: 0 2px 5px rgb(0 0 0 / 20%);
   font-family: "Roboto", sans-serif;
 }
@@ -54,12 +64,7 @@
   padding: 0;
 }
 .imgContainer {
-  border: 2px solid #f1f1f1;
-  margin-bottom: 5px;
-  border-radius: 10px;
-  border-top-left-radius: 60px;
-  border-bottom-right-radius: 60px;
-  padding: 10px 0 20px;
+  padding: 20px 0 10px;
 }
 .itemCard h3 {
   color: #535353;
@@ -80,14 +85,14 @@
 
 @media screen and (max-width: 480px) {
   .textContent {
-    width: 90%;
+    width: 95%;
     margin: 0px auto;
     padding: 20px;
   }
 
   .textContent h2 {
     font-size: 1.5rem;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
   }
   .textContent p {
     font-family: "Roboto", sans-serif;
@@ -117,12 +122,12 @@
     margin-bottom: 10px;
     padding: 0;
   }
-  .imgContainer {
+  /* .imgContainer {
     border: 2px solid #f1f1f1;
     margin-bottom: 5px;
     border-radius: 10px;
     padding: 10px 0 20px;
-  }
+  } */
   .itemCard h3 {
     color: #535353;
     font-size: 1rem;

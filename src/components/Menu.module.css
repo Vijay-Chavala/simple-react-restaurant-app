@@ -51,6 +51,26 @@ section p {
   color: #000;
 }
 
+@media screen and (max-width: 1120px) {
+  .section_center {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 5px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .section_center {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    grid-gap: 5px;
+  }
+}@media screen and (max-width: 824px) {
+  .section_center {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 5px;
+  }
+}
 @media screen and (max-width: 645px) {
   .section_center {
     display: grid;

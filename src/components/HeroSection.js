@@ -24,7 +24,7 @@ const HeroSection = ({
           backgroundRepeat: "no-repeat",
         }}
       >
-        <div className="container  ">
+        <div className={reverseComponent ? "container section-4" : "container"}>
           <div
             className={contentImg ? "row content-text-md" : "row"}
             style={{

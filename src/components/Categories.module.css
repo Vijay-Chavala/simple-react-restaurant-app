@@ -45,9 +45,32 @@ section {
   color: orange;
   border: 1px solid rgb(36, 36, 36);
 }
+
+@media screen and (max-width: 860px) {
+  .btn_Container {
+    width: 95%;
+    margin: 20px auto 0;
+  }
+  .btn_Container .catBtn {
+    margin: 8px;
+    padding: 8px 20px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  section {
+    padding: 0;
+  }
+
+  .btn_Container .catBtn {
+    margin: 5px;
+    padding: 7px 15px;
+    font-size: 0.9rem;
+  }
+}
 @media screen and (max-width: 480px) {
   section {
-    padding: 15px 0;
+    padding: 0;
   }
 
   .section_center h2 {
